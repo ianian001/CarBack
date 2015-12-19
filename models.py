@@ -90,8 +90,8 @@ class Car_image(db.Model):
         return '<User %r>' % self.username
 
 
-class Published_vehicle_account(db.Model):
-    __tablename__ = 'published_vehicle_account'
+class Post_account(db.Model):
+    __tablename__ = 'post_account'
     id = db.Column(db.Integer, primary_key=True)
     account = db.Column(db.String)
     password = db.Column(db.String)

@@ -23,6 +23,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@main.route("/post_account_list")
+def post_account_list():
+    return render_template('post_account_list.html')
+
 
 
 
