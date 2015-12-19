@@ -1,0 +1,59 @@
+{% include "header.html" %}
+{% include "nav.html" %}
+  <section id="content">
+    <section class="main padder">
+      <div class="clearfix">
+        <h4><i class="fa fa-table"></i>Table</h4>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <section class="panel">
+            <header class="panel-heading">
+              <span class="label pull-right"><a class="btn btn-sm btn-info" data-toggle="modal" href="#modal"><i class="fa fa-fw fa-plus"></i> Add account</a></span>
+              发布账号列表
+            </header>
+            <div>
+              <table class="table table-striped m-b-none text-small">
+                <thead>
+                  <tr>
+                    <th>所属网站</th>
+                    <th>用户名</th>
+                    <th width="150">操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>                    
+                    <td>
+                        58同城
+                    </td>
+                    <td>App prototype design</td>
+                    <td class="text-left">
+                      <div class="btn-group">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info-circle"></i></a>&nbsp;&nbsp;
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-pencil"></i></a>&nbsp;&nbsp;
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="delete"><i class="fa fa-trash-o"></i></a>&nbsp;&nbsp;
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </section>
+{% include "footer.html" %}
+  <script>
+    $(function(){
+      $("#delete").click(function(){
+        var r=confirm("你确定要删除吗？");
+        if (r==true) {
+
+        } else {
+
+        }
+      })
+    });
+  </script>
