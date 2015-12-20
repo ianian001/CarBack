@@ -27,6 +27,10 @@ def index():
 def post_account_list():
     return render_template('post_account_list.html')
 
+@main.route("/add_account")
+def add_account():
+    return render_template('add_account.html')
+
 
 
 
